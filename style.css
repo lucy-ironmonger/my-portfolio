@@ -8,6 +8,15 @@
     font-family: 'source-sans-pro', Helvetica;
   }
 
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+  }
 
 nav { 
     background-color: black;
@@ -42,42 +51,33 @@ nav > a:hover {
   
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 0.7fr 1.3fr 1.3fr 0.7fr 1fr;
-    grid-template-rows: 3fr 3fr 3fr;
-    gap: 1px 1px;
+    grid-template-columns: 1fr 0.7fr 320px 1.3fr 1.7fr;
+    grid-template-rows: 0.7fr 3fr 3fr;
     grid-template-areas:
       "a a a a a"
-      "b b b b b b"
-      "c c c c c c";
+      "b b b b b"
+      "c c c c c";
     justify-content: left;  
   }
 
   .introduction  {
-    padding: 20px 0px 0px 0px;
+    padding: 20px;
+    align-self: center;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
   }
 
-  .first-encounter {
-    align-items: center;
-    padding: 20px;
-    font-size: 40px;
+  .topics {
+    color: black;
+    padding: 0px 20px 0px 20px;
+    align-self: auto;
+    font-size: 30px;
     font-weight: 600;
   }
-  
-  .letter {
-    background-color: #0069b3;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding: 20px;
-    font-size: 30px;
-    color: white;
-    line-height: 1;
-    font-family: 'source-sans-pro', Helvetica;
-    font-weight: 200;
-    cursor: pointer;
-    transition: all .3s ease;
+
+
+  .family-side {
+    padding: 40px 0px 0px 0px;
   }
