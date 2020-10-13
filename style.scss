@@ -1,0 +1,258 @@
+* {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+    
+/*COLORS*/
+$colors: (
+    primary: #000000, 
+    accent: rgb(135, 79, 79),
+    link-hover: red,
+    bg: rgb(11, 11, 91),
+    nav-bar: #eeeeee,
+);
+
+/*FONTS*/
+$sans-serif: "Source Sans Pro", Helvetica, Verdana, sans-serif;
+$serif: Merriweather, Georgia, "Times New Roman", serif;
+$mono: "Source Code Pro", Courier, mono;
+
+/*FONT WEIGHTS*/
+$light: 200;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+/*FONT SIZES*/
+$font-size-standard-rem: 1.1rem;
+$font-size-double-rem: 2rem;
+$font-size-triple-rem: 3rem;
+$font-size-quadruple-rem: 4rem;
+$font-size-sextuple-rem: 6rem;
+
+/*LINE HEIGHT*/
+$line-height: 1.35;
+
+/*MARGINS & SPACING*/
+$main-header-padding: 5% 0 0 0;
+$subhead-margin: 1em 0 1em 0;
+$top-margin: 3em 0 1em 0;
+$top-left-margin: 3em 0 1em 2em;
+$big-quote-left-margin: 0.1em 0 0 2em;
+$big-quote-right-margin: 0.1em 0 0 0;
+
+.subheadmargin {
+    margin: $subhead-margin;
+}
+
+.topmargin {
+    margin: $top-margin;
+}
+
+.top-left-margin {
+    margin: $top-left-margin;
+}
+
+.rightindent {
+    margin: 0 0 0 4em;
+}
+
+/*NAV BAR*/
+$nav-padding: 2% 0 1% 0;
+
+/*BODY*/
+body, html {
+    font-family: $sans-serif;
+    font-size: $font-size-standard-rem;
+    line-height: $line-height; 
+    color: map-get($colors, primary);
+    font-weight: $light;     
+}  
+    
+/*HEADERS*/
+.main-header {
+    font-weight: $normal;
+    font-size: $font-size-sextuple-rem;
+    padding: $main-header-padding;
+}
+
+.subheader {
+    font-weight: $bold;
+    font-size: $font-size-double-rem;
+}
+
+.big-quote-left {
+    font-weight: $normal;
+    font-size: $font-size-sextuple-rem;
+    margin: $big-quote-left-margin;
+}
+
+.big-quote-right {
+    font-weight: $normal;
+    font-size: $font-size-quadruple-rem;
+    margin: $big-quote-right-margin;
+}
+
+/*BACKGROUND*/
+#bg {
+        clip-path: polygon(100% 0, 100% 68%, 34% 100%, 0 100%, 0 0);
+        background-color: map-get($colors, accent);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+/* NAV BAR*/ 
+  nav { 
+    background-color: map-get($colors, primary);
+    font-size: $font-size-double-rem;
+    color: map-get($colors, nav-bar);
+    padding: $nav-padding;
+    display: flex;
+    align-self: center;
+
+   a { 
+        color: map-get($colors, nav-bar);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: map-get($colors, link-hover);
+        cursor: pointer; 
+    }
+}
+/*NAV BAR SOCIAL LINKS*/
+.social-links {
+    list-style-type: none;
+    justify-content: flex-end; 
+    padding-right: 2%;
+}
+/*NAV BAR CONTACT LINK*/
+.contact {
+    padding-left: 2%;
+    margin-right: auto;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.3fr 1fr 1fr;
+    grid-template-rows: 
+    auto /*Header*/
+    auto /*Voicemail*/
+    auto /*Encounter*/
+    auto /*Born*/
+    auto /*Smells*/
+    0.1fr /*Thrown*/
+    0.1fr /*My Dad*/
+    auto
+    0.8fr /*Fake til you make */
+    auto
+    auto
+    auto /*Life Gets*/
+    auto
+    auto
+    auto  /*So here*/
+    auto;  /*Thanks*/
+    gap: 0px 0px;
+    grid-template-areas:
+      "Lucy Lucy Lucy Lucy Lucy"
+      "Voicemail Voicemail Voicemail Voicemail Voicemail"
+      "Encounter Encounter Encounter Encounter Encounter"
+      "Born Born Born Born Born"
+      "Life Life Smells Smells Smells"
+      "Life Life Skip Skip Skip"
+      "Thrown Thrown Thrown Thrown Thrown"
+      "My-Dad My-Dad Fake Fake Fake"
+      "My-Dad My-Dad Blank In-My In-My"
+      "Sliding Sliding Sliding In-My In-My"
+      "At-Birmingham At-Birmingham At-Birmingham In-My In-My"
+      "Life-Gets Life-Gets Life-Gets Life-Gets Life-Gets"
+      "Taking Taking Taking There There"
+      "So So So There There"
+      "So So So Thanks Thanks";
+  }
+  
+  .Lucy { grid-area: Lucy; 
+    grid-row: 1;
+    grid-column: 2/5;}
+  
+  .Voicemail { grid-area: Voicemail;
+    grid-row: 2;
+    grid-column: 2/5; }
+  
+  .Encounter { grid-area: Encounter;
+    grid-row: 3;
+    grid-column: 2/5; }
+  
+  .Born { grid-area: Born; 
+    grid-row: 4;
+    grid-column: 2/5;}
+  
+  .Smells { grid-area: Smells; 
+    grid-row: 5;
+    grid-column: 4/5;}
+  
+  .Life { grid-area: Life; 
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column: 1/3;}
+  
+  .Skip { grid-area: Skip;
+    grid-row: 6;
+    grid-column: 4/5; }
+  
+  .Thrown { grid-area: Thrown; 
+    grid-row: 7;
+    grid-column: 2/5;}
+  
+  .My-Dad { grid-area: My-Dad; 
+    grid-row-start: 8;
+    grid-row-end: 10;
+    grid-column: 2/3;}
+  
+  .Sliding { grid-area: Sliding; 
+    grid-row: 10;
+    grid-column: 2/3;}
+   
+  .At-Birmingham { grid-area: At-Birmingham;
+    grid-row: 11;
+    grid-column: 2/4; } 
+  
+  .Fake { grid-area: Fake; 
+    grid-row: 8;
+    grid-column: 3/6; }
+  
+  .Blank { grid-area: Blank; }
+  
+  .In-My { grid-area: In-My; 
+    grid-row-start: 9;
+    grid-row-end: 12;
+    grid-column: 4/5;}
+  
+  .Life-Gets { grid-area: Life-Gets; 
+  grid-row: 12;
+  grid-column: 3/6;}
+  
+  .Taking { grid-area: Taking; 
+    grid-row: 13;
+    grid-column: 2/3;
+  }
+  
+  .So { grid-area: So; 
+    grid-row-start: 14;
+    grid-row-end: 16;
+    grid-column: 2/3;}
+  
+  .There { grid-area: There;
+    grid-row-start: 13;
+    grid-row-end: 15;
+    grid-column: 4/5; }
+  
+  .Thanks { grid-area: Thanks; 
+    grid-row: 15;
+    grid-column: 4/6;
+}
+  
