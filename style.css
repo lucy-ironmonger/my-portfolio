@@ -348,4 +348,8 @@ nav a:hover {
   -ms-grid-column-span: 2;
   grid-column: 4/6;
 }
-/*# sourceMappingURL=style3.css.map */
+
+.contact {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
