@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!--Start of HEAD-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>About Lucy Ironmonger</title>
-</head><!--End of head-->
-  <nav><!--Start of main nav-->
-        <nav class="contact"><a href="mailto:lucyironmonger@gmail.com">Contact Me</a>
-        </nav><!--end of contact nav-->
-        <nav class="social-links">
-          <a href="https://github.com/ironmongrrrl">Github</a>&nbsp;|&nbsp; 
-          <a href="https://twitter.com/lucyironmonger">Twitter</a>&nbsp;|&nbsp; 
-          <a href="social-links"><a href="https://soundcloud.com/lucyironmonger">Soundcloud</a>
-        </nav><!--end of social links nav-->
-   </nav><!--Main nav end-->
-
-
-<main class="contact">   
-  
-  <form action="#" method="GET">
-    <ul>
-    <li><label for="name">Name:</label>
-    <input type="text" id="name" name="full_name" required></li>
-
-    <li><label for="email">E-mail:</label>
-    <input type="email" id="mail" name="email" required></li>
-
-    <li><label for="phone_number">Phone Number:</label>
-      <input type="tel" id="mail" name="phone_number"></li>
-
-    <li><label for="msg">Message:</label>
-    <textarea id="msg" name="message" placeholder="Hey Lucy..."></textarea></li>
+    <link rel="stylesheet" href="style.css"><!--Stylesheet-->
     
-    <li class="button"><button type="reset" id="reset">Reset form</button></li>
-    <li class="button"><button type="submit" id="submit">Send your message</button></li>
+    <title>Contact Lucy Ironmonger</title><!--TITLE-->
+
+</head><!--End of HEAD-->
+
+<nav><!--Start of NAV-->
+  <nav class="contact"><!--Contact-->
+    <a href="#">Contact</a>
+  </nav>
+
+  <nav class="social-links"><!--Social-->
+    <a href="https://github.com/ironmongrrrl">Github</a>&nbsp;|&nbsp; 
+    <a href="https://twitter.com/lucyironmonger">Twitter</a>&nbsp;|&nbsp; 
+    <a href="social-links"><a href="https://soundcloud.com/lucyironmonger">Soundcloud</a>
+  </nav>
+</nav><!--End of NAV-->
+
+<body><!--Start of BODY-->  
+
+  <main class="contact"><!--Start of MAIN-->  
     
-  
-  </ul>
+    <form class="contact"><!--Start of FORM-->  
+      
+      <ul class=contactFields>
 
-    </form>
-</main>
+        <li><label for="fullName">Name:</label>
+        <input type="text" id="fullName" name="fullName"></li>
 
-</body>
+        <li><label for="email">Email:</label>
+        <input type="email" id="email" name="email"></li>
+
+        <li><label for="phone">Phone:</label>
+          <input type="phone" id="phone" name="phone"></li>
+
+        <li><label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Hey Lucy..."></textarea></li>
+        
+        <li class="button"><button type="reset" id="reset">Reset form</button></li>
+        <li class="button"><button type="submit" id="submit">Submit</button></li>
+      
+      </ul>
+
+      </form><!--End of FORM-->  
+
+  </main><!--End of MAIN-->  
+
+<script src="script.js"></script>
+</body><!--End of BODY-->  
 </html>

@@ -1,3 +1,5 @@
+@use 'nav' as *;
+@use 'body';
 * {
   text-align: left;
   margin: 0;
@@ -25,16 +27,6 @@
 
 .rightindent {
   margin: 0 0 0 4em;
-}
-
-/*NAV BAR*/
-/*BODY*/
-body, html {
-  font-family: "Source Sans Pro", Helvetica, Verdana, sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.35;
-  color: #000000;
-  font-weight: 200;
 }
 
 /*HEADERS*/
@@ -65,49 +57,11 @@ body, html {
 #bg {
   -webkit-clip-path: polygon(100% 0, 100% 68%, 34% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 68%, 34% 100%, 0 100%, 0 0);
-  background-color: #874f4f;
+  background-color: orange;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
-}
-
-/* NAV BAR*/
-nav {
-  background-color: #000000;
-  font-size: 2rem;
-  color: #eeeeee;
-  padding: 2% 0 1% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-nav a {
-  color: #eeeeee;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: red;
-  cursor: pointer;
-}
-
-/*NAV BAR SOCIAL LINKS*/
-.social-links {
-  list-style-type: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding-right: 2%;
-}
-
-/*NAV BAR CONTACT LINK*/
-.contact {
-  padding-left: 2%;
-  margin-right: auto;
 }
 
 .grid-container {
@@ -351,5 +305,58 @@ nav a:hover {
 
 .contact {
   text-align: center;
+}
+
+/*Getting rid of bulletpoints on contact form*/
+.contactFields {
+  list-style-type: none;
+}
+
+/*NAV BAR*/
+/* NAV BAR*/
+nav {
+  background-color: #000000;
+  font-size: 2rem;
+  color: #eeeeee;
+  padding: 2% 0 1% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+nav a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/*NAV BAR SOCIAL LINKS*/
+.social-links {
+  list-style-type: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 2%;
+}
+
+/*NAV BAR CONTACT LINK*/
+.contact {
+  padding-left: 2%;
+  margin-right: auto;
+}
+
+/*BODY*/
+body, html {
+  font-family: "Source Sans Pro", Helvetica, Verdana, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  color: #000000;
+  font-weight: 200;
 }
 /*# sourceMappingURL=style.css.map */

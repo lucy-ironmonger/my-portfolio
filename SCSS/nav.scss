@@ -1,0 +1,35 @@
+/*NAV BAR*/
+$nav-padding: 2% 0 1% 0;
+
+/* NAV BAR*/ 
+  nav { 
+    background-color: map-get($colors, primary);
+    font-size: $font-size-double-rem;
+    color: map-get($colors, nav-bar);
+    padding: $nav-padding;
+    display: flex;
+    align-self: center;
+
+   a { 
+        color: map-get($colors, nav-bar);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: map-get($colors, link-hover);
+        cursor: pointer; 
+    }
+}
+
+/*NAV BAR SOCIAL LINKS*/
+.social-links {
+    list-style-type: none;
+    justify-content: flex-end; 
+    padding-right: 2%;
+}
+
+/*NAV BAR CONTACT LINK*/
+.contact {
+    padding-left: 2%;
+    margin-right: auto;
+}

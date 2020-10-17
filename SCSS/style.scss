@@ -1,0 +1,104 @@
+* {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+    
+/*COLORS*/
+$colors: (
+    primary: #000000, 
+    accent:orange,
+    link-hover: red,
+    bg: rgb(11, 11, 91),
+    nav-bar: #eeeeee,
+);
+
+/*FONTS*/
+$sans-serif: "Source Sans Pro", Helvetica, Verdana, sans-serif;
+$serif: Merriweather, Georgia, "Times New Roman", serif;
+$mono: "Source Code Pro", Courier, mono;
+
+/*FONT WEIGHTS*/
+$light: 200;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+/*FONT SIZES*/
+$font-size-standard-rem: 1.1rem;
+$font-size-double-rem: 2rem;
+$font-size-triple-rem: 3rem;
+$font-size-quadruple-rem: 4rem;
+$font-size-sextuple-rem: 6rem;
+
+/*LINE HEIGHT*/
+$line-height: 1.35;
+
+/*MARGINS & SPACING*/
+$main-header-padding: 5% 0 0 0;
+$subhead-margin: 1em 0 1em 0;
+$top-margin: 3em 0 1em 0;
+$top-left-margin: 3em 0 1em 2em;
+$big-quote-left-margin: 0.1em 0 0 2em;
+$big-quote-right-margin: 0.1em 0 0 0;
+
+.subheadmargin {
+    margin: $subhead-margin;
+}
+
+.topmargin {
+    margin: $top-margin;
+}
+
+.top-left-margin {
+    margin: $top-left-margin;
+}
+
+.rightindent {
+    margin: 0 0 0 4em;
+}
+
+
+    
+/*HEADERS*/
+.main-header {
+    font-weight: $normal;
+    font-size: $font-size-sextuple-rem;
+    padding: $main-header-padding;
+}
+
+.subheader {
+    font-weight: $bold;
+    font-size: $font-size-double-rem;
+}
+
+.big-quote-left {
+    font-weight: $normal;
+    font-size: $font-size-sextuple-rem;
+    margin: $big-quote-left-margin;
+}
+
+.big-quote-right {
+    font-weight: $normal;
+    font-size: $font-size-quadruple-rem;
+    margin: $big-quote-right-margin;
+}
+
+/*BACKGROUND*/
+#bg {
+        clip-path: polygon(100% 0, 100% 68%, 34% 100%, 0 100%, 0 0);
+        background-color: map-get($colors, accent);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+  
+
+@import 'nav';
+
+@import 'body';
+
+@import 'about';
