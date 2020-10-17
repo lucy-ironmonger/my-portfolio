@@ -26,11 +26,11 @@ $semibold: 500;
 $bold: 700;
 
 /*FONT SIZES*/
-$font-size-standard-rem: 1.1rem;
-$font-size-double-rem: 2rem;
-$font-size-triple-rem: 3rem;
-$font-size-quadruple-rem: 4rem;
-$font-size-sextuple-rem: 6rem;
+$font-size-1: 1.5vw;
+$font-size-2: 2vw;
+$font-size-3: 3vw;
+$font-size-4: 4vw;
+$font-size-6: 6vw;
 
 /*LINE HEIGHT*/
 $line-height: 1.35;
@@ -64,24 +64,24 @@ $big-quote-right-margin: 0.1em 0 0 0;
 /*HEADERS*/
 .main-header {
     font-weight: $normal;
-    font-size: $font-size-sextuple-rem;
+    font-size: $font-size-6;
     padding: $main-header-padding;
 }
 
 .subheader {
     font-weight: $bold;
-    font-size: $font-size-double-rem;
+    font-size: $font-size-2;
 }
 
 .big-quote-left {
     font-weight: $normal;
-    font-size: $font-size-sextuple-rem;
+    font-size: $font-size-6;
     margin: $big-quote-left-margin;
 }
 
 .big-quote-right {
     font-weight: $normal;
-    font-size: $font-size-quadruple-rem;
+    font-size: $font-size-4;
     margin: $big-quote-right-margin;
 }
 
@@ -94,7 +94,6 @@ $big-quote-right-margin: 0.1em 0 0 0;
         position: absolute;
         z-index: -1;
     }
-
   
 
 @import 'nav';

@@ -4,7 +4,7 @@ $nav-padding: 2% 0 1% 0;
 /* NAV BAR*/ 
   nav { 
     background-color: map-get($colors, primary);
-    font-size: $font-size-double-rem;
+    font-size: $font-size-1;
     color: map-get($colors, nav-bar);
     padding: $nav-padding;
     display: flex;
